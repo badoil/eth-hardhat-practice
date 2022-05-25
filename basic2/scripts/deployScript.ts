@@ -13,7 +13,6 @@ async function main () {
 
     console.log(`AssetToken address:${assetToken.address}`)
 }
-
 main()
 .then(() => process.exit(0))
 .catch((error) => {
