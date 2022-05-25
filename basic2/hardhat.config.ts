@@ -30,6 +30,13 @@ const config: HardhatUserConfig = {
     solidity: {
         version: "0.8.13",
     },
+    networks: {
+        ropsten: {
+            url: `https://ropsten.infura.io/v3/${process.env.INFURA_API_KEY}`,
+            accounts: [process.env.ADMIN || ''],
+            chainId: 3,
+          },
+    }
 };
 
 export default config;
